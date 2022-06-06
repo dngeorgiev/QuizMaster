@@ -13,3 +13,8 @@ MonoBehaviour:
   m_Name: Question 2
   m_EditorClassIdentifier: 
   question: Which Game of Thrones character is known as the Young Wolf?
+  answers:
+  - Robb Stark
+  - Arya Stark
+  - Sansa Stark
+  correctAnswerIndex: 0

@@ -8,7 +8,7 @@ public class EndScreen : MonoBehaviour
     [SerializeField] TextMeshProUGUI finalScoreText;
     ScoreKeeper scoreKeeper;
 
-    void Start()
+    void Awake()
     {
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
@@ -21,6 +21,10 @@ public class EndScreen : MonoBehaviour
         if (score == 69)
         {
             finalScoreText.text += " (lol)";
+        }
+        else if (score == 0)
+        {
+            finalScoreText.text = "OH WOW!\nI didn't know someone could be THAT dumb!";
         }
     }
 }
